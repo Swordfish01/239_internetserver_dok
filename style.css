@@ -256,12 +256,13 @@ div#budy {
 #menu li {
     padding: 4px 0;
     font-size: 15px;
-    color: gray;
+    
 }
 
 #menu a.unterthema>li {
     font-size: 12px;
-    margin-left: 4px;
+    padding: 4px 4px;
+    
 }
 
 #menuToggle input:checked~ul {
@@ -343,4 +344,16 @@ tr:nth-child(even) {
     #menu li {
         padding: 0;
     }
+}
+
+#myName {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+
+#modul {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
 }

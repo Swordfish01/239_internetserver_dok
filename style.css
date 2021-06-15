@@ -347,12 +347,14 @@ tr:nth-child(even) {
 }
 
 #myName {
+    display: inline;
     display: flex;
     justify-content: right;
     padding: 10px;
 }
 
 #modul {
+    display: inline;
     display: flex;
     justify-content: left;
     padding: 10px;

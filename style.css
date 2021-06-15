@@ -3,7 +3,7 @@ html {
 }
 
 header {
-    background-color: rgb(24, 1, 27);
+    background-color: rgb(18, 1, 20);
     flex-grow: 0;
     color: white;
 }
@@ -99,7 +99,7 @@ div#ueberuns>img {
 }
 
 div#footer {
-    background-color: rgb(24, 1, 27);
+    background-color: rgb(18, 1, 20);
     padding: 20px;
     margin-top: 20px;
     flex-shrink: 0;
@@ -270,6 +270,10 @@ div#budy {
 #menu li {
     padding: 4px 0;
     font-size: 15px;
+}
+
+#menu.unterthema {
+    font-size: 12px;
 }
 
 #menuToggle input:checked~ul {

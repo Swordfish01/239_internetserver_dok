@@ -269,7 +269,7 @@ div#budy {
     font-size: 15px;
 }
 
-#menu a.unterthema {
+#menu a.unterthema>li {
     font-size: 12px;
 }
 

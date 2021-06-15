@@ -271,6 +271,7 @@ div#budy {
 
 #menu a.unterthema>li {
     font-size: 12px;
+    margin-left: 4px;
 }
 
 #menuToggle input:checked~ul {

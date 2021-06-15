@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="zooming.min.js"></script>
     <title>Modul 239 | Internetserver</title>
+    <script src="zooming.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
 
@@ -57,6 +57,39 @@
                     <a class="unterthema" href="#kapitel1.7">
                         <li>Kapitel 1.6 - Sessions, Visits</li>
                     </a>
+                    <a href="#kapitel2">
+                        <li>Kapitel 2 - DNS</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel2.1">
+                        <li>Kapitel 2.1 - Rootserver</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel2.2">
+                        <li>Kapitel 2.2 - Top Level Domain</li>
+                    </a>
+                    <a href="#kapitel3">
+                        <li>Kapitel 3 - Server</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel3.1">
+                        <li>Kapitel 3.1 - CPU</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel3.2">
+                        <li>Kapitel 3.2 - RAM</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel3.3">
+                        <li>Kapitel 3.3 - Speicher</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel3.4">
+                        <li>Kapitel 3.4 - Bandbreite</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel3.5">
+                        <li>Kapitel 3.5 - Sicherheit</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel3.6">
+                        <li>Kapitel 3.6 - SSH</li>
+                    </a>
+                    <a href="#kapitel4">
+                        <li>Kapitel 4 - Linux</li>
+                    </a>
                     
                 </ul>
             </div>
@@ -65,7 +98,7 @@
         <div class="container blah">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="bilder/logmysql.png" alt="test">
+                
                 </div>
 
                 <div class="col-md-9">
@@ -206,7 +239,7 @@
             <div class="col-md-9">
                 <h3 id="kapitel2">2 - DNS</h3><br>
                 <p>DNS steht für «Domain Name System» und dient der Namensauflösung. Weil wir uns Zahlen nicht gut merken können, schreiben wir mit Buchstaben. So auch im Browser, wenn wir eine Seite aufrufen wollen, schreiben wir den Namen der Seite, nicht deren IP – Adresse. Der Browser jedoch versteht die Buchstaben nicht, deshalb wird mithilfe des DNS eine Namensauflösung durchgeführt; Die Adresse wird in eine IP – Adresse übersetzt. <br><br>
-                    Auch die Adresse, die wir eingeben, enthält schon Informationen, z.B. das Protokoll, der Domänenname und den Pfad zu der angeforderten Information. Wenn die IP – Adresse nicht zwischengespeichert wurde, wird sie wie folgt aufgelöst: <br>
+                    Auch die Adresse, die wir eingeben, enthält schon Informationen, z.B. das Protokoll, der Domänenname und den Pfad zu der angeforderten Information. Wenn die IP – Adresse nicht zwischengespeichert wurde, wird sie wie folgt aufgelöst: <br><br>
                 </p>
                 <ol>
                     <li>Der User gibt im Browser eine Adresse ein; Als erstes wird geprüft, ob diese Adresse zwischengespeichert ist. Ist dies nicht der Fall, wird eine Anfrage an den DNS – Resolver gesendet.</li>
@@ -230,9 +263,10 @@
             </div>
             <div class="col-md-9">
                 <h3 id="kapitel2.1">2.1 - Rootserver</h3><br>
-                <p>Root – Server (auch DNS Root – Server) ist ein Bestandteil der Namensauflösung durch den DNS – Server. Seine Funktion: Bei der Übersetzung des Domain-Namens in eine IP-Adresse beantwortet er Anfragen (Requests) in der Root-Zone des DNS.<br><br>
-                    Die Root-Zone ist die höchste Ebene im Namensraum vom DNS. Dabei führen die Root-Nameserver die Namensauflösung nicht selbst aus, sondern geben den anfragenden Clients allein die Auskunft, von welchem anderen DNS-Server sie weitere Informationen über die angeforderte IP-Adresse erhalten. <br><br>
+                <p>Root – Server (auch DNS Root – Server oder Stammdomäne) ist ein Bestandteil der Namensauflösung durch den DNS – Server. Seine Funktion: Bei der Übersetzung des Domain-Namens in eine IP-Adresse beantwortet er Anfragen (Requests) in der Root-Zone des DNS.<br><br>
+                    Die Root-Zone ist die höchste Ebene, bzw. die obeerste Domäne im Internet, die als Punkt dargestellt wird. Dabei führen die Root-Nameserver die Namensauflösung nicht selbst aus, sondern geben den anfragenden Clients allein die Auskunft, von welchem anderen DNS-Server sie weitere Informationen über die angeforderte IP-Adresse erhalten. <br><br>
                     Dies geschieht über eine Datei, der Root-Zonen-Datei, die fester Bestandteil eines DNS-Root-Servers ist. Sie enthält sämtliche Namen und IP-Adressen jeglicher Nameserver von allen Top-Level-Domains (TLDs). Diesen Daten kommt eine wichtige Funktion zu: Auf sie greift ein Root-Server zurück, wenn er dem Client denjenigen Nameserver nennt, bei dem weitere benötigte Auskünfte bezüglich seines Requests vorliegen.  <br><br>
+                    Für die Verwaltung der Root - Server ist ICANN zuständig. Weltweit gibt es 13 solcher Server.<br><br>
                 </p>
             </div>
         </div>
@@ -245,7 +279,120 @@
             </div>
             <div class="col-md-9">
                 <h3 id="kapitel2.2">2.2 - Top Level Domains</h3><br>
-                <p>Top Level Domains (TLDs) </p>
+                <p>Die Top Level Domains (TLD) ist unterhalb der Stammdomäne (Root - Server) angesiedelt und wird gleichermassen von ICANN verwaltet. <br>
+                    Auf der Ebene der TLDs wird zwischen drei Domänentypen unterschieden; Den Strukturdomänen, den geografischen Domänen und den Reverse - Domänen.
+                    Beispiele für Strukturdomänen sind: .com, .edu, .net, .org, etc., und Beispeile für geografische Domänen sind: .ch, .de, .eu, etc. <br>
+                    Bei der Reverse - Domäne handelt es sich um die Domäne mit der Bezeichnung IN-ADDR.ARPA, die für die Zuordnung von IP zu Hostname verantwortlich ist. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel3">3 - Server</h3><br>
+                <p>Beim Aufbauen eines Server ist es wichtig, die richtige Hardware zu Nutzen. Man muss erfassen, für was der Server gebraucht wird, welche Anwendungen benötigt werden, was für ein Betriebssystem benötigt wird, Laufzeiten, Zugriffe etc. 
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel3.1">3.1 - CPU</h3><br>
+                <p>Für alle Server macht es Sinn, einen Leistungsstarken Prozessor einzubauen. Je mehr Cores und Threads, um so besser. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel3.2">3.2 - RAM</h3><br>
+                <p>Der Arbeitsspeicher ist vom Betriebssystem abhängig; Windows braucht z.B. mindestens 2GB RAM, während Ubuntu schon mit 1GB RAM läuft. Wenn Betriebssysteme aber unter ihren Mindestanforderungen laufen, führt das schnell zu Problemen. Die Applikationen brauchen je nach Betriebssystem ebenfalls mehr oder weniger RAM.<br><br>
+                    Beim RAM ist also wichtig, das Betriebssystem, die benötigten Applikationen, das Control Panel, die Sicherheitssoftware etc. einzubeziehen. Wichtig ist, sobald die Möglichkeit besteht, immer mehr als Angefordert zu nehmen, um auf jeden Fall alles abzudecken und dass es zu keiner Überlastung kommt. <br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel3.3">3.3 - Speicher</h3><br>
+                <p>Genügend Speicherplatz ist unerlässlich. Beim Zusammenbau des Servers ist es wichtig, die richtige Menge an Speicherplatz einzubauen. Dabei muss alles bedacht werden, was in irgendeiner Weise Platz belegt. Dazu gehört: Das Betriebssystem, Applikationen, Datenbanken, Mails, Sicherheitssoftware, Tools, Benutzerinformationen etc. Was man dabei nicht vergessen darf, ist dass bei einem RAID – System meist nur die hälfte oder zumindest nicht der gesamte Speicherplatz, also die Summe des Speichers aller Festplatten zusammen, belegt werden kann. Wenn also ein RAID – System implementiert, muss das ebenfalls noch beachtet werden.<br><br> 
+                    Bei der Auswahl nimmt man am besten ein Speichermedium, das mehr Speicherplatz als benötigt bietet. So bleibt die Geschwindigkeit gewährleistet und es gibt noch mehr Platz, fall Daten dazukommen oder etwas doch mehr Speicherplatz belegt, als erwartet. <br><br>
+                    Weitere wichtige Faktoren sind die Geschwindigkeit und Zuverlässigkeit. Wenn ein Zugriff sehr lange dauert oder das Medium nach einem halben Jahr kaputt geht, ist das sehr nervenauftreibend und es kann sehr kostspielig werden. Deshalb setzt man heute eher auf die SSD, da sie stossfest, energiearmer und vor allem schneller und zuverlässiger ist. Einer der wenigen Nachteile der SSD ist aber ihr Preis; Sie sind teurer als HDDs und für die gleiche Menge von Speicher wie eine HDD, zahlt man bei der SSD für den gleichen Speicherplatz mehr.<br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel3.4">3.4 - Bandbreite</h3><br>
+                <p>Bei der Auswahl der Verkabelung und der Anschlüsse muss die Gesamtmenge der Daten pro Monat beachtet werden. Diese hängen von: <br>
+                </p>
+                <ul>
+                    <li>Der grösse der Website</li>
+                    <li>Der Servernutzung</li>
+                    <li>Der Anforderungen</li>
+                    <li>Der Anzahl an Zugriffen</li>
+                    <li>Der Antworten</li>
+                </ul>
+                <p>ab.Heute werden für die grossen Server und Datencenter Glasfaserkabel eingesetzt, die zuverlässig in ihrer Geschwindigkeit und Übertragung sind. Auch hier ist es empfehlenswert, mehr Bandbreite als nötig zur Verfügung stellen zu können. <br><br></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel3.5">3.5 - Sicherheit</h3><br>
+                <p>Sobald eine Webseite Publiziert wird, ist sie Angreifbar. Deshalb sollte man möglichst die Sicherheit gewährleisten. Dies kann erreicht werden durch sorgfältiges Konfigurieren, durch einige Massnahmen und Vorkehrungen sowie durch Testen und dem Auffinden von Sicherheitslücken und dem Verwenden von sicheren Verbindungen. <br><br>
+                    Ein beliebter Einfallspunkt sind zum Beispiel Formularfelder oder Suchfelder. Wenn solche Felder nicht ausreichend geschützt werden, sind SQL – Injections oder Cross – Site – Scripting nicht unwahrscheinlich. <br><br>
+                    Wenn man mit WordPress arbeitet, muss auch dieses ausreichend geschützt werden. Eine beliebte Art, um auf das Backend einer Website zu gelangen, sind zum Beispiel Brute – Force Attacken. Es ist recht einfach, zum Login zu gelangen, da WordPress standardmässig immer denselben Pfad zu bestimmten Orten innerhalb von WordPress hat, wie zum Beispiel das Ende der URL, die zum Login führt: wp – admin. Wird diese geändert, ist es nur schon schwieriger, auf das Login zu kommen.<br><br>
+                    Durch genaue Überwachung kann man auch IPs und Länder herausfiltern, die gefährlich sind oder sein könnten und diese schon im Voraus sperren. <br><br>
+                    Sobald eine Verbindung zu einer Datenbank besteht, ist es umso wichtiger, die Datenübertragung zu verschlüsseln, so dass sich das Protokoll nicht mehr um http, sondern um https handelt. Sonst sind Logindaten und Passwörter im Klartext lesbar. Das kann verheerend sein, gerade wenn es sich um heikle Passwörter handelt. <br><br>
+                    Etwas, das schnell passiert und ebenfalls nicht geschehen sollte, sind Benutzer mit falschen Rechten. Wenn ein Durchschnittsbenutzer mit wenig Ahnung plötzlich volle Administrator oder Root – Rechte besitzt, ist im Falle eines Angriffes das gesamte System gefährdet. <br><br>
+                    Folglich sollte eine Website so weit wie möglich getestet werden, bevor sie Publiziert wird und/oder in einer Testumgebung vollständig getestet werden. Eine beliebte Art des Testens ist der sogenannte Penetration – Test, bei dem alles auf brutalste Weise getestet wird.<br><br>
+                     </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel3.6">3.6 - SSH</h3><br>
+                <p>SSH (Secure Shell) ist ein Tool zur Fernadministration. Damit kann ein Netzwerk von einem externen Computer aus betreut und verwaltet werden. Dabei sollte aber beachtet werden, dass die Sicherheit durch die Fernadministration mehr gefährdet ist. Als Administrator ist uneingeschränkter Zugriff auf alle Daten möglich, weshalb Fernadministrationen nur mit sicheren Verbindungen erfolgen sollte, bestmöglich über einen VPN. <br>
+                    SSH wird sowohl auf Windows- sowie Linuxsystemen eingesetzt. Der Datentransfer erfolgt in verschlüsseltem Zustand. Der Zugriff erfolgt über die Kommandozeile.<br><br>
+                    </p>
             </div>
         </div>
     </div>

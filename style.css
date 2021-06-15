@@ -350,10 +350,12 @@ tr:nth-child(even) {
     display: flex;
     justify-content: right;
     padding: 10px;
+    width: auto;
 }
 
 #modul {
     display: flex;
     justify-content: left;
     padding: 10px;
+    width: auto;
 }

@@ -205,12 +205,46 @@
             <div class="col-md-9">
                 <h3 id="kapitel2">2 - DNS</h3><br>
                 <p>DNS steht für «Domain Name System» und dient der Namensauflösung. Weil wir uns Zahlen nicht gut merken können, schreiben wir mit Buchstaben. So auch im Browser, wenn wir eine Seite aufrufen wollen, schreiben wir den Namen der Seite, nicht deren IP – Adresse. Der Browser jedoch versteht die Buchstaben nicht, deshalb wird mithilfe des DNS eine Namensauflösung durchgeführt; Die Adresse wird in eine IP – Adresse übersetzt. <br><br>
-
                     Auch die Adresse, die wir eingeben, enthält schon Informationen, z.B. das Protokoll, der Domänenname und den Pfad zu der angeforderten Information. Wenn die IP – Adresse nicht zwischengespeichert wurde, wird sie wie folgt aufgelöst: <br>
                 </p>
                 <ol>
                     <li>Der User gibt im Browser eine Adresse ein; Als erstes wird geprüft, ob diese Adresse zwischengespeichert ist. Ist dies nicht der Fall, wird eine Anfrage an den DNS – Resolver gesendet.</li>
+                    <li>Der DNS – Resolver prüft ebenfalls seinen Zwischenspeicher, ist weiter nichts vorhanden, wird eine Anfrage an den Root – Server gesendet. Dieser kennt alle Top – Level – Domain Namen. </li>
+                    <li>Mit der Information, wo die TLD zu finden ist, geht der DNS – Resolver zu diesem. Der TLD – Server weiss, woher diese Adresse kommt, von welchem  Name – Server die Adresse kommt. </li>
+                    <li>Der DNS – Resolver schickt eine Anfrage an den entsprechenden Name – Server. Dieser kennt die IP – Adresse der entsprechenden Seite. Diese Information wird dem Rechner gesendet.</li>
+                    <li>Mit dem Kennen der IP – Adresse, weiss der Browser, wo diese Website ist, kann sie vom Webserver abrufen und darstellen. Wenn auf dieser Webseite eine Unterseite aufgerufen wird, wird die Anfrage direkt an den Webserver gesendet.</li>
                 </ol>
+                <br>
+                <p>DNS-Server müssen sorgfältig konfiguriert werden, da sonst schnell einmal Fehler auftreten. Wenn kein eigener DNS – Server zur Verfügung steht, kann man z.B. auch den von Google (8.8.8.8 / 8.8.4.4) verwenden. <br><br>
+                    Bei einer Eigenkonfiguration eines DNS – Servers sollte immer eine Forward – und Reverse – Lookup – Zone definiert werden. Die Forward Lookup Zone löst ein Name in eine IP – Adresse auf und die Reverse Lookup Zone löst eine IP – Adresse in einen Namen auf.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel2.1">2.1 - Rootserver</h3><br>
+                <p>Root – Server (auch DNS Root – Server) ist ein Bestandteil der Namensauflösung durch den DNS – Server. Seine Funktion: Bei der Übersetzung des Domain-Namens in eine IP-Adresse beantwortet er Anfragen (Requests) in der Root-Zone des DNS.<br><br>
+                    Die Root-Zone ist die höchste Ebene im Namensraum vom DNS. Dabei führen die Root-Nameserver die Namensauflösung nicht selbst aus, sondern geben den anfragenden Clients allein die Auskunft, von welchem anderen DNS-Server sie weitere Informationen über die angeforderte IP-Adresse erhalten. <br><br>
+                    Dies geschieht über eine Datei, der Root-Zonen-Datei, die fester Bestandteil eines DNS-Root-Servers ist. Sie enthält sämtliche Namen und IP-Adressen jeglicher Nameserver von allen Top-Level-Domains (TLDs). Diesen Daten kommt eine wichtige Funktion zu: Auf sie greift ein Root-Server zurück, wenn er dem Client denjenigen Nameserver nennt, bei dem weitere benötigte Auskünfte bezüglich seines Requests vorliegen.  <br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel2.2">2.2 - Top Level Domains</h3><br>
+                <p>Top Level Domains (TLDs) </p>
             </div>
         </div>
     </div>

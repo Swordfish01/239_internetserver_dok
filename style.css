@@ -159,9 +159,6 @@ footer a {
     max-width: 300px!important;
 }
 
-#cheyenne {
-    width: 15%;
-}
 
 #themebilder {
     float: left;
@@ -272,7 +269,7 @@ div#budy {
     font-size: 15px;
 }
 
-#menu.unterthema {
+#menu a.unterthema {
     font-size: 12px;
 }
 

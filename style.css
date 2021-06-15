@@ -346,16 +346,14 @@ tr:nth-child(even) {
     }
 }
 
-#myName {
-    display: flex;
-    justify-content: right;
+div#myName {
+    float: right;
     padding: 10px;
-    max-width: 50%;
+    
 }
 
-#modul {
-    display: flex;
-    justify-content: left;
+div#modul {
+    float: left;
     padding: 10px;
-    max-width: 50%;
+
 }

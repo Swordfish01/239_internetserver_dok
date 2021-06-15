@@ -8,8 +8,10 @@ header {
     color: white;
 }
 
-h2 {
-    margin: 25px;
+
+.mt-3, .my-3 {
+    margin-top: 3rem !important;
+    margin-bottom: 4rem !important;
 }
 
 div#budy {
@@ -256,7 +258,7 @@ div#budy {
     padding: 50px;
     padding-top: 100px;
     padding-bottom: 10px;
-    background: rgb(49, 124, 204);
+    background: rgb(18, 1, 20);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -267,6 +269,7 @@ div#budy {
 #menu li {
     padding: 4px 0;
     font-size: 15px;
+    color: gray;
 }
 
 #menu a.unterthema>li {

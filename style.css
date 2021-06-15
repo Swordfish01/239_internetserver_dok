@@ -3,8 +3,9 @@ html {
 }
 
 header {
-    background-color: rgb(49, 124, 204);
+    background-color: rgb(21, 2, 24);
     flex-grow: 0;
+    color: white;
 }
 
 div#budy {
@@ -16,7 +17,7 @@ div#budy {
 
 div#budy>main>div>div#news {
     background-color: white;
-    color: rgb(11, 106, 194);
+    color: rgb(21, 2, 24);
     float: right;
     width: 40%;
     margin: 30px;
@@ -29,7 +30,7 @@ div#budy>main>div>div#news {
 
 div#budy>div>div#beschreibung {
     background-color: white;
-    color: rgb(11, 106, 194);
+    color: rgb(21, 2, 24);
     float: right;
     width: 60%;
     margin: 30px;
@@ -42,7 +43,7 @@ div#budy>div>div#beschreibung {
 
 div#budy>div#ueberuns {
     background-color: white;
-    color: rgb(11, 106, 194);
+    color: rgb(21, 2, 24);
     float: left;
     margin: 30px;
     padding: 10px;
@@ -54,7 +55,7 @@ div#budy>div#ueberuns {
 
 div#budy>div>div#link123 {
     background-color: white;
-    color: rgb(11, 106, 194);
+    color: rgb(21, 2, 24);
     float: right;
     width: fit-content;
     margin: 30px;
@@ -67,7 +68,7 @@ div#budy>div>div#link123 {
 
 div#budy>main>div#about {
     background-color: white;
-    color: rgb(11, 106, 194);
+    color: rgb(21, 2, 24);
     float: left;
     margin: 30px;
     padding: 10px;

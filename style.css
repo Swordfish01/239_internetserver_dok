@@ -95,11 +95,6 @@ iframe {
     padding: 20px;
 }
 
-div#ueberuns>img {
-    max-width: 30%;
-    margin: 30px 20px 20px 30px;
-}
-
 div#footer {
     background-color: rgb(18, 1, 20);
     padding: 20px;
@@ -152,14 +147,6 @@ footer a {
     text-decoration: underline;
 }
 
-.tab-content img#fabio {
-    height: 134px!important;
-    width: 100px!important;
-}
-
-.tab-content img#timon {
-    max-width: 300px!important;
-}
 
 
 #themebilder {

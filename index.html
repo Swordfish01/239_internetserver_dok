@@ -88,6 +88,9 @@
                     <a class="unterthema" href="#kapitel3.6">
                         <li>Kapitel 3.6 - SSH</li>
                     </a>
+                    <a class="unterthema" href="#kapitel3.7">
+                        <li>Kapitel 3.7 - Server Absichern</li>
+                    </a>
                     <a href="#kapitel4">
                         <li>Kapitel 4 - Linux</li>
                     </a>
@@ -478,6 +481,29 @@
     <div class="container blah">
         <div class="row">
             <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h4 id="kapitel3.7">3.7 - Server Absichern</h4>
+                <p>Um den Server möglichst sicher zu Konfigurieren und sicher zu halten, gibt es einige grundlegende Dinge, die einzuhalten sind:</p><br>
+                <ul>
+                    <li>Minimale Installation: Je mehr Software auf einem Server ist, umso grösser ist die Angriffsfläche</li>
+                    <li>Regelmässige Systemupdates: Veralltete Systeme sind immer besonders Hackerfreundlich. Das System sollte immer aktuell gehalten werden. Ein hilfreiches Tool dafür ist zum Beispiel <italic>apticron</italic></li>
+                    <li>Bei Verbindungsaufnahmen stehts Verschlüsselte und Abgeschirmte Verbindungen nutzen; Über einen VPN mit SSH o.ä</li>
+                    <li>Am besten so wenig als Administrator oder Root Arbeiten. Wenn der Root oder Administrator gehackt werden, hat der Angreifer Kontrolle über das ganze System</li>
+                    <li>Beim Auftreten eines Problemes oder einer Sicherheitslücke sollte man umgehend Benachrichtigt werden.</li>
+                    <li>Mittels TCPD und Whitelists gefährdete und unsichere Ports, Webseiten und Anwendungen blocken.</li>
+                    <li>Es sollte eine Festplattenüberwachung eingerichtet werden</li>
+                </ul>
+                <br>
+                <p>Wenn man sich nur schon an diese wenigen Dinge hält, ist der Server schon um einiges Sicherer. Natürlich gibt es noch weitaus mehr Massnahmen, die es zu einzurichten gilt oder die getroffen werden können.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
                 <img src="bilder/1200px-Tux.svg.png">
             </div>
             <div class="col-md-9">
@@ -682,7 +708,9 @@
         <div class="row">
             <div class="col-md-3">
                 <img src="bilder/Bild1.png">
+                <br>
                 <img src="bilder/Bild2.png">
+                <br>
                 <img src="bilder/Bild3.png">
 
             </div>

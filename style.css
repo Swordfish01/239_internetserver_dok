@@ -96,23 +96,21 @@ iframe {
 }
 
 div#footer {
-    background-color: rgb(18, 1, 20);
+ 
     padding: 20px;
     margin-top: 20px;
     flex-shrink: 0;
 }
-footer {
-    background-color: rgb(18, 1, 20);
-}
+
 
 div#footer p#rechts {
     float: right;
-    background-color: rgb(18, 1, 20);
+ 
 }
 
 div#footer p#links {
     float: left;
-    background-color: rgb(18, 1, 20);
+   
 }
 
 .timabs {
@@ -120,7 +118,7 @@ div#footer p#links {
 }
 
 footer a {
-    color: white!important;
+    color: rgb(20, 15, 24)!important;
 }
 
 *.tab-content img {

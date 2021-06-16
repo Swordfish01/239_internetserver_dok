@@ -5,7 +5,7 @@ html {
 header {
     background-color: rgb(18, 1, 20);
     flex-grow: 0;
-    color: white;
+    color: rgb(101, 79, 114);
 }
 
 
@@ -194,6 +194,7 @@ div#budy {
     width: 40px;
     height: 32px;
     color: rgb(31, 29, 34);
+    position: absolute;
     top: -7px;
     left: -5px;
     cursor: pointer;

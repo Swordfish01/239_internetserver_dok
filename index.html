@@ -127,30 +127,19 @@
                     <a class="unterthema" href="#kapitel5.3">
                         <li>Kapitel 5.3 - Apache2</li>
                     </a>
-                    <a class="unterthema" href="#kapitel5.3.1">
-                        <li>Kapitel 5.3.1 - Installation</li>
-                    </a>
+                  
                     <a class="unterthema" href="#kapitel5.4">
                         <li>Kapitel 5.4 - PhpMyAdmin</li>
                     </a>
-                    <a class="unterthema" href="#kapitel5.4.1">
-                        <li>Kapitel 5.4.1 - Installation</li>
-                    </a>
+                  
                     <a class="unterthema" href="#kapitel5.5">
                         <li>Kapitel 5.5 - PHP & MySQL</li>
                     </a>
-                    <a class="unterthema" href="#kapitel5.5.1">
-                        <li>Kapitel 5.5.1 - Installation PHP</li>
-                    </a>
-                    <a class="unterthema" href="#kapitel5.5.2">
-                        <li>Kapitel 5.5.2 - Installation MySQL</li>
-                    </a>
+                    
                     <a class="unterthema" href="#kapitel5.6">
                         <li>Kapitel 5.6 - FTP</li>
                     </a>
-                    <a class="unterthema" href="#kapitel5.6.1">
-                        <li>Kapitel 5.6.1 - Installation FTP - Server</li>
-                    </a>
+                    
                     <a class="unterthema" href="#kapitel5.7">
                         <li>Kapitel 5.7 - Portforwarding</li>
                     </a>
@@ -750,72 +739,196 @@
                       <th>Funktion</th>
                     </tr>
                     <tr>
-                      <td>/etc/bashrc</td>
-                      <td>Konfigurationen für alle Logins</td>
+                      <td>sudo apt Upgrade</td>
+                      <td>Upgradet das System</td>
                      </tr>
                      <tr>
-                       <td>/etc/crontab</td>
-                       <td>Tabelle für zeitgesteuerte Vorgänge</td>
+                       <td>sudo apt Update</td>
+                       <td>Updatet das System </td>
                      </tr>
                      <tr>
-                        <td>/etc/fstab</td>
-                        <td>Tabelle der Dateisysteme, die automatisch gemountet werden</td>
+                        <td>sudo apt dist update</td>
+                        <td>
+                            Updatet das System
+                            </td>
                     </tr>
                     <tr>
-                        <td>/etc/group</td>
-                        <td>Konfigurationen der Benutzergruppen</td>
+                        <td>sudo apt clean</td>
+                        <td>Leeren des Paketcaches</td>
                     </tr>
                     <tr>
-                        <td>/etc/hosts</td>
-                        <td>Zuordnung von Rechnernamen zu IP-Adressen</td>
+                        <td>sudo apt install [Programm]</td>
+                        <td>Gewünschtes Programm installieren</td>
                     </tr>
                     <tr>
-                        <td>/etc/init.d <br> /etc/rc.d/init.d</td>
-                        <td> Verzeichnis für Scripts zum Starten bzw. Stoppen von Programmen</td>
+                        <td>sudo adduser [Benutzername]</td>
+                        <td> Benutzer hinzufügen</td>
                     </tr>
                     <tr>
-                        <td>/etc/inittab</td>
-                        <td>Konfigurationsdatei für den init-Prozess</td>
+                        <td>sudo userdel [Benutzer]</td>
+                        <td>Benutzer löschen</td>
                     </tr>
                     <tr>
-                        <td>/etc/modprobe.conf <br> /etc/modules.conf</td>
-                        <td>Konfiguration der Kernel-Module</td>
+                        <td>sudo passwd [Benutzer]</td>
+                        <td>Passwort ändern</td>
                     </tr>
                     <tr>
-                        <td>/etc/network</td>
-                        <td>Verzeichnis für Netzwerkeinstellungen und Scripts</td>
+                        <td>sudo usermod [Benutzer]</td>
+                        <td>Benutzereinstellungen ändern</td>
                     </tr>
                     <tr>
-                        <td>/etc/passwd</td>
-                        <td>Konfigurationsdatei mit Benutzerangaben (Benutzernamen, Benutzernummern, Heimverzeichnis usw.)</td>
+                        <td>sudo addgroup [Gruppenname]</td>
+                        <td>Gruppe hinzufügen</td>
                     </tr>
                     <tr>
-                        <td>/etc/printcap</td>
-                        <td>Verfügbare Drucker im System</td>
+                        <td>sudo groupdel [Gruppe]/td>
+                        <td>VGruppe löschen</td>
                     </tr>
                     <tr>
-                        <td>/etc/profile</td>
-                        <td>Konfiguration aller Logins</td>
+                        <td>sudo groupmod [Gruppe]</td>
+                        <td>Gruppeneinstellungen ändern</td>
                     </tr>
                     <tr>
-                        <td>/etc/resolv.conf</td>
-                        <td>Liste der DNS - Server</td>
+                        <td>sudo usermod – G [Gruppe] [Benutzer]</td>
+                        <td>Benutzer einer zusätzlichen Gruppe hinzufügen.</td>
                     </tr>
                     <tr>
-                        <td>/etc/services</td>
-                        <td>Liste der Ports für Internet - Dienste</td>
+                        <td>sudo usermod -g [gruppe] [Benutzer]</td>
+                        <td>Benutzer einer primären Gruppe hinzufügen. </td>
                     </tr>
                     <tr>
-                        <td>/etc/shadow</td>
-                        <td>Datei mit den Passwörtern den Benutzer</td>
+                        <td>sudo chown [Besitzer:Gruppe] [Datei]</td>
+                        <td>Besitzer eines Objektes ändern</td>
                     </tr>
                     <tr>
-                        <td>/etc/sysconfig/</td>
-                        <td>Verzeichnis für Systemkonfigurationen</td>
+                        <td>sudo chgrp [Gruppe] [Datei]</td>
+                        <td>Gruppe eines Objekts ändern</td>
                     </tr>
                     <tr>
-                        <td>/etc/syslog.conf</td>
-                        <td>Konfiguration des Syslog. Dieser Dienst organisiert die Sammlung und Speicherung von Systemlogs</td>
+                        <td>ls -l</td>
+                        <td>Zugriffsrechte auflisten</td>
+                    </tr>
+                    <tr>
+                        <td>sudo chmod [Rechte] [Datei]</td>
+                        <td>Zugriffsrechte ändern </td>
+                    </tr>
+                    <tr>
+                        <td>su-c</td>
+                        <td>Als root agieren</td>
+                    </tr>
+                    <tr>
+                        <td>exit</td>
+                        <td>Als vorheriger Benutzer agieren</td>
+                    </tr>
+                    <tr>
+                        <td>ps -e</td>
+                        <td>Alle Prozesse anzeigen</td>
+                    </tr>
+                    <tr>
+                        <td>ps -e -</td>
+                        <td>Alle Daten zu den Prozessen anzeigen</td>
+                    </tr>
+                    <tr>
+                        <td>ps -e u</td>
+                        <td>Alle benutzerbezogenen Daten zu den Prozessen anzeigen</td>
+                    </tr>
+                    <tr>
+                        <td>top</td>
+                        <td>Fortlaufende Anzeige des Ressourcen verbrauch</td>
+                    </tr>
+                    <tr>
+                        <td>killal [Prozess]</td>
+                        <td>Prozess beenden</td>
+                    </tr>
+                    <tr>
+                        <td>vmstat</td>
+                        <td>ZProzesse, Speicher und Swap-Partition anzeigen</td>
+                    </tr>
+                    <tr>
+                        <td>free</td>
+                        <td>Arbeits- und Swapspeicher</td>
+                    </tr>
+                    <tr>
+                        <td>df</td>
+                        <td>Harddiskbelegung </td>
+                    </tr>
+                    <tr>
+                        <td>ddu -s [Verzeichnis]</td>
+                        <td>Gesamter Speicherplatzverbrauch des Verzeichnisses inkl. Unterverzeichnisse</td>
+                    </tr>
+                    <tr>
+                        <td>du [Verzeichnis]</td>
+                        <td>Speicherplatzverbrauch der Verzeichnisse und aller Unterverzeichnissen einzeln</td>
+                    </tr>
+                    <tr>
+                        <td>du -max-depth 1 [Verzeichnis]</td>
+                        <td>Speicherplatzverbrauch des Verzeichnisses und aller direkten Unterverzeichnissen einzeln</td>
+                    </tr>
+                    <tr>
+                        <td>W</td>
+                        <td>Angemeldete Benutzer</td>
+                    </tr>
+
+                    <tr>
+                        <td>last</td>
+                        <td>Letzte Benutzeranmeldung</td>
+                    </tr>
+                    <tr>
+                        <td>unname -a</td>
+                        <td>Kernelversion, Systeminformationen</td>
+                    </tr>
+                    <tr>
+                        <td>procinfo</td>
+                        <td>Speicher, Swap-Partition, CPU-Auslastung und Interrupts</td>
+                    </tr>
+
+                    <tr>
+                        <td>ls [Verzeichnis]</td>
+                        <td>Verzeichnisinhalt anzeigen</td>
+                    </tr>
+                    <tr>
+                        <td>ls -a [Verzeichnis], ls -al [Verzeichnis]</td>
+                        <td>Verzeichnisinhalt mit versteckten Dateien</td>
+                    </tr>
+                    <tr>
+                        <td>cd [Pfad]</td>
+                        <td>Verzeichnis wechseln</td>
+                    </tr>
+                    <tr>
+                        <td>cd ../</td>
+                        <td>Ins Wurzelverzeichnis wechseln</td>
+                    </tr>
+                    <tr>
+                        <td>cd..</td>
+                        <td>Ins übergeordnete Verzeichnis wechseln</td>
+                    </tr>
+                    <tr>
+                        <td>rmdir [Verzeichnis]</td>
+                        <td>Verzeichnis löschen</td>
+                    </tr>
+                    <tr>
+                        <td>lrm -R [Verzeichnis]</td>
+                        <td>Verzeichnis mit Unterverzeichnissen und Daten löschen</td>
+                    </tr>
+                    <tr>
+                        <td>mv [Quellverzeichnis] [Zielverzeichnis]</td>
+                        <td>Verzeichnis verschieben mit Unterverzeichnissen und Dateien</td>
+                    </tr>
+                    <tr>
+                        <td>tree [Verzeichnis] -d</td>
+                        <td>Verzeichnisbaum anzeigen</td>
+                    </tr>
+                    <tr>
+                        <td>tree</td>
+                        <td>Verzeichnisbaum inkl. Dateien anzeigen</td>
+                    </tr>
+                    <tr>
+                        <td>pwd</td>
+                        <td>Arbeitsverzeichnis ausgeben</td>
+                    </tr>
+                    <tr>
+                        <td>ifconfig</td>
+                        <td>IP – Adressen ausgeben</td>
                     </tr>
                   </table>
             </div>
@@ -863,6 +976,7 @@
         <div class="row">
             <div class="col-md-3">
                 <img src="bilder/apach.png">
+                <img src="bilder/Apache2.png">
             </div>
             <div class="col-md-9">
                 <h4 id="kapitel5.3">5.3 - Apache2</h4>
@@ -874,19 +988,8 @@
     <div class="container blah">
         <div class="row">
             <div class="col-md-3">
-                
-            </div>
-            <div class="col-md-9">
-                <h5 id="kapitel5.3.1">5.3.1 - Installation</h5>
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="container blah">
-        <div class="row">
-            <div class="col-md-3">
                 <img src="bilder/phpmyadmin-logo.jpg">
+                <img src="bilder/Bild4.png">
             </div>
             <div class="col-md-9">
                 <h4 id="kapitel5.4">5.4 - PhpMyAdmin</h4>
@@ -898,19 +1001,8 @@
     <div class="container blah">
         <div class="row">
             <div class="col-md-3">
-                
-            </div>
-            <div class="col-md-9">
-                <h5 id="kapitel5.4.1">5.4.1 - Installation</h5>
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="container blah">
-        <div class="row">
-            <div class="col-md-3">
                 <img src="bilder/2560px-PHP-logo.svg.png">
+                <img src="bilder/PHP.png">
                 <img src="bilder/index.png">
             </div>
             <div class="col-md-9">
@@ -930,46 +1022,10 @@
                 
             </div>
             <div class="col-md-9">
-                <h5 id="kapitel5.5.1">5.5.1 - Installation MySQL</h5>
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="container blah">
-        <div class="row">
-            <div class="col-md-3">
-                
-            </div>
-            <div class="col-md-9">
-                <h5 id="kapitel5.5.2">5.5.2 - Installation PHP</h5>
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="container blah">
-        <div class="row">
-            <div class="col-md-3">
-                
-            </div>
-            <div class="col-md-9">
                 <h4 id="kapitel5.6">5.6 - FTP</h4>
                 <p>FTP – Kurz für File Transfer Protocol – macht genau das: Transferiert Daten vom einen zum anderen Ort. Dabei besteht ein grosser Nachteil: Die Daten werden unverschlüsselt übertragen. Das ist ein erhebliches Sicherheitsrisiko, deshalb werden FTP – Übertragungen heute praktisch nicht mehr genutzt. Als Gegenmassnahme kann eine Authentifizierung eingerichtet werden, aber wenn jemand die Übertragung überwacht, ist sie im Klartext lesbar. Deshalb ist es empfehlenswert, zumindest SFTP zu verwenden oder eine SSL Verschlüsslung einzurichten. <br>
                     Das FTP verwendet für die Steuerung und Datenübertragung jeweils separate Verbindungen: Eine FTP-Sitzung beginnt, indem vom Client zum Control Port des Servers (Port 21) eine TCP-Verbindung aufgebaut wird. Über diese Verbindung werden Befehle zum Server gesendet. Der Server antwortet auf jeden Befehl mit einem Statuscode, oft mit einem angehängten, erklärenden Text. Die meisten Befehle sind allerdings erst nach einer erfolgreichen Authentifizierung zulässig.
                     </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container blah">
-        <div class="row">
-            <div class="col-md-3">
-                
-            </div>
-            <div class="col-md-9">
-                <h5 id="kapitel5.6.1">5.6.1 - Installation FTP - Server</h5>
-                
             </div>
         </div>
     </div>
@@ -1041,7 +1097,7 @@
 
 </div>
 
-    <!-- <div id="footer" class="d-flex flex-column min-vh-100 text-white"> -->
+    <div id="footer" ><!--class="d-flex flex-column min-vh-100 text-white"-->
         <footer>
             <p id="links">&copy;Cheyenne Rieder 2021</p>
             <p id="rechts"><a href="https://www.bbz-sh.ch/home" target="_blank">BBZ Schaffhausen</a><br><a href="https://bbz.macherit.ch/" target="_blank">BBZ Module Informatik</a></p>

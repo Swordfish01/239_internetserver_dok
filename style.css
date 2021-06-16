@@ -8,6 +8,9 @@ header {
     color: rgb(101, 79, 114);
 }
 
+header p {
+    margin: 1rem !important;
+}
 
 .mt-3, .my-3 {
     margin-top: 3rem !important;

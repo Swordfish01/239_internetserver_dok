@@ -106,9 +106,65 @@
                     <a class="unterthema" href="#kapitel4.2.2">
                         <li>Kapitel 4.2.2 - Home - Verzeichnis</li>
                     </a>
-                    <a href="#kapitel4.3">
-                        <li>Kapitel 4.3 - Webserver</li>
+                    <a class="unterthema" href="#kapitel4.2.3">
+                        <li>Kapitel 4.2.3 - Logdateien</li>
                     </a>
+                    <a class="unterthema" href="#kapitel4.3">
+                        <li>Kapitel 4.3 - Linux Terminal Befehle</li>
+                    </a>
+                    <a href="#kapitel5">
+                        <li>Kapitel 5 - Webserver</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.1">
+                        <li>Kapitel 5.1 - Statische Webseiten</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.2">
+                        <li>Kapitel 5.2 - Dynamische Webseiten</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.3">
+                        <li>Kapitel 5.3 - Apache2</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.3.1">
+                        <li>Kapitel 5.3.1 - Installation</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.4">
+                        <li>Kapitel 5.4 - PhpMyAdmin</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.4.1">
+                        <li>Kapitel 5.4.1 - Installation</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.5">
+                        <li>Kapitel 5.5 - PHP & MySQL</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.5.1">
+                        <li>Kapitel 5.5.1 - Installation PHP</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.5.2">
+                        <li>Kapitel 5.5.2 - Installation MySQL</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.6">
+                        <li>Kapitel 5.6 - FTP</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.6.1">
+                        <li>Kapitel 5.6.1 - Installation FTP - Server</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.7">
+                        <li>Kapitel 5.7 - Portforwarding</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.8">
+                        <li>Kapitel 5.8 - DDNS</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.9">
+                        <li>Kapitel 5.9 - SSL</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel5.9.1">
+                        <li>Kapitel 5.9.1 - HTTP und HTTPS</li>
+                    </a>
+                    <a class="unterthema" href="#kapitel6">
+                        <li>Kapitel 6 - WordPress</li>
+                    </a>
+
+
                     
                 </ul>
             </div>
@@ -713,7 +769,209 @@
             </div>
             <div class="col-md-9">
                 <h3 id="kapitel5">5 - Webserver</h3>
-                <p></p><br><br>
+                <p>Webserver sind Online – Server, auf denen Webseiten gehostet werden können. Man kann sowohl einen eigenen Webserver aufsetzen und seine Webseite auf diesem Hosten, oder man Hostet seine Webseite extern bei einem Anbieter. </p><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.1">5.1 - Statische Webseiten</h3>
+                <p>Statische Webseiten sind Seiten, die nicht verändert werden können, ohne am Code etwas ändern zu müssen. Meist haben sie kein Backend, nur ihren Code. 
+                    Hinter den statischen Websiten steckt auch keine Datenbank; PHP wird also gar nicht verwendet.<br> Ressourcenmässig brauchen statische Webseiten wenig. Ausserdem beherbergen sie weniger Risiken; Da die statische Webseite zu keiner Datenbank o.ä Verbindung aufbaut, können Daten nicht abgefangen oder gelesen werden. </p><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.2">5.2 - Dynamische Webseiten</h3>
+                <p>Dynamische Webseiten sind veränderbar, ohne etwas am Code ändern zu müssen. Das wird ermöglicht durch eine Datenbank und der zugehörigen Skriptsprache, zum Beispiel PHP. Dynamische Seiten werden oft mithilfe eines CMS’ gemacht. CMS steht kurz für Content Management System. Das ist eine Software zur gemeinschaftlichen Erstellung, Bearbeitung, Organisation und Darstellung digitaler Inhalte, meist in Form von Webseiten. Wenn man etwas an einer dynamischen Seite ändern will, braucht man das lediglich im Backend zu tun. Die Änderung wird in einer Datenbank gespeichert und per PHP werden die neuen Informationen abgerufen und entsprechend auf der Seite angezeigt. Dadurch entstehen aber auch einige Sicherheitsrisiken; Wenn die Verbindung zwischen Datenbank und Webseite unverschlüsselt ist oder die Such – und Textfelder nicht ausreichend geschützt wird, gelangen schnell private Daten in die Öffentlichkeit.  </p><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.3">5.3 - Apache2</h3>
+                <p>Apache2 ist ein Webserver. Mithilfe von Apache können HTML – Files dargestellt werden. Im Prinzip kann man mit Apache eine fertige Website hosten, allerdings gilt es zu beachten, dass die Seiten mit Apache nur statisch sein können.</p><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.3.1">5.3.1 - Installation</h3>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.4">5.4 - PhpMyAdmin</h3>
+                <p>PhpMyAdmin ist eine Webanwendung zur Administration von MySQL Datenbanken. Dabei können die Datenbanken verwaltet werden, ohne SQL schreiben zu müssen. PhpMyAdmin ist unter der GNU General Public License lizenziert und ist auch in vielen Linux-Distributionen enthalten. Es werden derzeit 75 Sprachen unterstützt. PhpMyAdmin ist weit verbreitet und wird unter anderem von großen Webhosting-Providern verwendet</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.4.1">5.4.1 - Installation</h3>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.5">5.5 - PHP / MyAQL</h3>
+                <p>PHP ist eine serverseitige Skriptsprache, mit der dynamische und interaktive Webseiten gemacht werden können. Per PHP werden Webseiten Serverseitig validiert und der Austausch zwischen einer Datenbank und den Benutzereingaben auf einer Website erfolgt ebenfalls durch PHP. <br><br>
+
+                    MySQL ist ein sehr verbreitetes Datenbankverwaltungssystem. Es wird sowohl kostenlos als Open – Source Programm, wie auch als kommerzielle Enterpriseversion zur Verfügung gestellt. MySQL ist mit verschiedenen Betriebssystemen kompatibel.
+                    Datenbanken werden gebraucht, sobald eine Website dynamisch ist. Im Zusammenspiel mit PHP können Informationen ausgetauscht, abgerufen und eingelesen werden. Da dadurch eine Verbindung zwischen Datenbank und Webseite besteht, ist es wichtig, diese ausreichend zu Schützen.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.5.1">5.5.1 - Installation MySQL</h3>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.5.2">5.5.2 - Installation PHP</h3>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.6">5.6 - FTP</h3>
+                <p>FTP – Kurz für File Transfer Protocol – macht genau das: Transferiert Daten vom einen zum anderen Ort. Dabei besteht ein grosser Nachteil: Die Daten werden unverschlüsselt übertragen. Das ist ein erhebliches Sicherheitsrisiko, deshalb werden FTP – Übertragungen heute praktisch nicht mehr genutzt. Als Gegenmassnahme kann eine Authentifizierung eingerichtet werden, aber wenn jemand die Übertragung überwacht, ist sie im Klartext lesbar. Deshalb ist es empfehlenswert, zumindest SFTP zu verwenden oder eine SSL Verschlüsslung einzurichten. <br>
+                    Das FTP verwendet für die Steuerung und Datenübertragung jeweils separate Verbindungen: Eine FTP-Sitzung beginnt, indem vom Client zum Control Port des Servers (Port 21) eine TCP-Verbindung aufgebaut wird. Über diese Verbindung werden Befehle zum Server gesendet. Der Server antwortet auf jeden Befehl mit einem Statuscode, oft mit einem angehängten, erklärenden Text. Die meisten Befehle sind allerdings erst nach einer erfolgreichen Authentifizierung zulässig.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.6.1">5.6.1 - Installation FTP - Server</h3>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.7">5.7 - Portforwarding</h3>
+                <p>Portforwarding – auch Portweiterleitung genannt – macht auch genau das, nach dem es benannt ist: Es ist die Weiterleitung einer Verbindung, die über ein Rechnernetz auf einem bestimmten Port eingeht, zu einem anderen Computer. Das Portforwarding stellt öffentliche Dienste auf dem Netzwerk ein, so wie Webserver, FTP Server, E-Mail-Server, oder andere spezielle Internetanwendungen. Wenn die Benutzer diesen Typ von Anforderung an Ihr Netzwerk mittels Internet senden, wird der Router diese Anfragen an den geeigneten PC weiterleiten.  Wenn Clients nicht auf einen FTP-Server zugreifen können, der mit einem Linksys-Router verbunden ist, müssen die Ports für FTP an den Server weitergeleitet werden, damit die Anfrage erkannt wird.  Dies wird auf einem Router konfiguriert, wenn Sie einen Server-Computer oder einen Spielserver verwenden.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.8">5.8 - DDNS</h3>
+                <p>Dynamisches DNS, DDNS oder DynDNS ist eine Technik, um Domänen dynamisch zu aktualisieren. Der Zweck ist, dass ein Gerät nach dem Wechsel seiner IP-Adresse automatisch und schnell den dazugehörigen Domäneneintrag ändert.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.9">5.9 - SSL</h3>
+                <p>SSL steht für «Secure Sockets Layer» und ist die Standardtechnologie für die Absicherung von Internetverbindungen und den Schutz wichtiger, privater Daten, die zwischen zwei Systemen übertragen werden. So wird verhindert, dass Menschen mit unlauteren Absichten die Daten lesen oder sogar verändern können. Bei diesen beiden Systemen kann es sich um einen Server und einen Client oder um eine Übertragung von einem Server auf einen handeln.<br>
+                    SSL stellt sicher, dass zwischen Benutzern und Websites oder zwischen zwei Systemen übertragene Daten nicht gelesen werden können. Dazu werden Verschlüsselungsalgorithmen verwendet, um Daten während der Übertragung zu verschlüsseln.<br>
+                    TLS (Transport Layer Security) ist lediglich eine aktualisierte Version von SSL, die höhere Sicherheit bietet. Wir bezeichnen unsere Sicherheitszertifikate weiterhin als SSL, da dieser Begriff am geläufigsten ist.<br>
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel5.9.1">5.9.1 - HTTP und HTTPS</h3>
+                <p>Der Unterschied zwischen http und https ist, dass https Übertragungen verschlüsselt sind. Somit gelten Seiten, die mit https gekennzeichnet sind, als sicherer. Tatsächlich sind https Seiten viel höher im Google – Ranking als http Seiten. Mit einem SSL – Zertifikat kann eine http Seite zu einer https Seite gemacht werden. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blah">
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-9">
+                <h3 id="kapitel6">6 - WordPress</h3>
+                <p>WordPress ist das meistgenutzte Kostenlose CMS der Welt. Mithilfe von WordPress kann auf relativ angenehme Weise schnell eine dynamische Webseite entstehen. Für WordPress braucht man eine Datenbank. </p>
             </div>
         </div>
     </div>

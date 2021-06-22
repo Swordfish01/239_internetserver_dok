@@ -103,20 +103,18 @@ div#footer {
 div#footer {
  
     padding: 40px;
-    margin: 20px;
     flex-shrink: 0;
 }
 
 
 div#footer p#rechts {
     float: right;
-    margin: 1rem;
+    
  
 }
 
 div#footer p#links {
     float: left;
-    margin: 1rem;
    
 }
 

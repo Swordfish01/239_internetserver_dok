@@ -285,7 +285,7 @@ div#budy {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 200px;
+    bottom: 20px;
     right: 30px;
     font-size: 30px;
     color: white;

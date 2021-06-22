@@ -98,25 +98,27 @@ div#footer {
     padding: 20px;
     margin-top: 20px;
     flex-shrink: 0;
+    color: white;
 }
 
 div#footer {
  
     padding: 40px;
     flex-shrink: 0;
+    color: white;
 }
 
 
 div#footer p#rechts {
     float: right;
-    color: white;
+    color: white !important;
     
  
 }
 
 div#footer p#links {
     float: left;
-    color: white;
+    color: white !important;
    
 }
 
